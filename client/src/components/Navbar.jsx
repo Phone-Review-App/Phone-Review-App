@@ -3,11 +3,12 @@ import Button from './Button';
 
 
 const Navbar = (props) => {
-    const { className, text, description, support, src, alt } = props;
+    const { className, navbarh1ClassName, text, description, support, src, alt } = props;
 
     return (
-        <div>
-            <h1>{ text }</h1>
+        <div
+            className = {className} >
+            <h1 className={navbarh1ClassName} >{ text }</h1>
             <Button text="Home"></Button>
             <img src={ src } alt={ alt }/>       
             <p>{ description }</p>
